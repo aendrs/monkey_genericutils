@@ -51,7 +51,7 @@ if __name__ == "__main__":
     output_dir = "path/to/output/directory"
     weights_path = "path/to/yolov5/weights.pt"
     detect_script_path = "path/to/yolov5/detect.py"
-    stride=3
+    stride=3 # this value works fine in practice
 
-    output_video = process_video(input_video, output_dir, weights_path, detect_script_path,stride)
+    output_video = process_video(input_video, output_dir, weights_path, detect_script_path, stride)
     print(f"Processing complete. Output video saved to: {output_video}") 
